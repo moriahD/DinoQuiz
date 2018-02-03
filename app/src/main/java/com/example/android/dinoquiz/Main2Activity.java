@@ -52,7 +52,8 @@ public class Main2Activity extends AppCompatActivity {
 
         int totalScore = calculateScore(clickAnswer1, clickAnswer3, clickAnswer5, hasAnswers4one, hasAnswers4two, hasAnswers4three, hasAnswers4four);
 
-        String message = createScoreSummary(score); //how should i do this?
+        String message = createScoreSummary(score);
+        displayResult(message);
 
     }
 
@@ -88,12 +89,12 @@ public class Main2Activity extends AppCompatActivity {
 
     //Score message according to scores.
     private String createScoreSummary (int score){
-        String scoreMessage;
+        String scoreMessage = "you have total: " + score;
 
         if (score >80){
-            scoreMessage = "\n" + "You did a great job!";
+            scoreMessage = scoreMessage + "\n" + "You did a great job!";
         }else {
-            scoreMessage = "\n" + "Study more about dinosaurs!";
+            scoreMessage = scoreMessage + "\n" + "Study more about dinosaurs!";
         }
 
         return scoreMessage;
@@ -103,7 +104,10 @@ public class Main2Activity extends AppCompatActivity {
     /**
      * This method displays the given quantity value on the screen. how?
      */
-
+    private void displayResult(String message){
+        TextView textResult = (TextView) findViewById(R.id.resultMsg);
+        textResult.setText(message);
+    }
 
 
 

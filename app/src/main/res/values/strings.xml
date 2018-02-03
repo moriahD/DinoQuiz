@@ -46,6 +46,9 @@
         <string name="gorgosaurus">Gorgosaurus</string>
         <string name="baryonyx">Baryonyx</string>
 
+        <!--result message-->
+        <string name="resultMessage"></string>
+
         <!--Button texts-->
         <string name="submit">Submit</string>
         <string name="restart">Restart</string>

@@ -209,6 +209,11 @@
 
         </RadioGroup>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultMsg"
+            android:text="@string/resultMessage" />
 
         <LinearLayout
             android:layout_width="match_parent"
