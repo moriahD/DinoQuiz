@@ -52,15 +52,14 @@ public class Main2Activity extends AppCompatActivity {
 
         int totalScore = calculateScore(clickAnswer1, clickAnswer3, clickAnswer5, hasAnswers4one, hasAnswers4two, hasAnswers4three, hasAnswers4four);
 
-        String scoreMessage= "Total score: " + score + "/100";
-
+        String message = createScoreSummary(score); //how should i do this?
 
     }
 
     //Calculate points for total score
     private int calculateScore (boolean clickAnswer1, boolean clickAnswer3,boolean hasAnswers4one, boolean hasAnswers4two, boolean hasAnswers4three, boolean hasAnswers4four, boolean clickAnswer5){
 
-       //Add 15 points each when answers for question 1, 2, 3, 5 is clicked
+        //Add 15 points each when answers for question 1, 2, 3, 5 is clicked
         //question1 answer
         if (clickAnswer1){
             score = score + 15;
@@ -86,16 +85,19 @@ public class Main2Activity extends AppCompatActivity {
         return score;
 
     }
-    // here is a test comment
 
     //Score message according to scores.
     private String createScoreSummary (int score){
-        System.out.println("Your total score:" + score);
+        String scoreMessage;
+
         if (score >80){
-            System.out.println ("\nYou did a great job!");
+            scoreMessage = "\n" + "You did a great job!";
         }else {
-            System.out.println ("\nStudy more about dinosaurs!");
+            scoreMessage = "\n" + "Study more about dinosaurs!";
         }
+
+        return scoreMessage;
+
     }
 
     /**
