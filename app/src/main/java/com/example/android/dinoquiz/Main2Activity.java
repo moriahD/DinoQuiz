@@ -86,6 +86,7 @@ public class Main2Activity extends AppCompatActivity {
         return score;
 
     }
+    // here is a test comment
 
     //Score message according to scores.
     private String createScoreSummary (int score){
