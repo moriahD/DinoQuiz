@@ -1,0 +1,53 @@
+<resources>
+    <!--app title-->
+    <string name="app_name">Dino Quiz</string>
+
+    <!--Welcome page-->
+    <string name="greeting">Welcome to Dino Quiz App!</string>
+    <string name="start">Let\'s start!</string>
+
+    <!--Quiz page-->
+
+        <!--Question 1-->
+        <string name="question1">Question 1: </string>
+        <string name="question1_title">How many different dinosaurs were there?</string>
+        <!--Question 2-->
+        <string name="question2">Question 2: </string>
+        <string name="question2_title">What is biggest dinosaur that\'s named so far?</string>
+        <!--Question 3-->
+        <string name="question3">Question 3: </string>
+        <string name="question3_title">Did dinosaurs have ears?</string>
+        <!--Question 4-->
+        <string name="question4">Question 4: </string>
+        <string name="question4_title">Which of today\'s animals lived with the dinosaurs?</string>
+        <!--Question 5-->
+        <string name="question5">Question 5: </string>
+        <string name="question5_title">Which dinosaurs went fishing?</string>
+
+        <!--answers1-->
+        <string name="around100">Around 100 different dinosaurs</string>
+        <string name="around300">Around 300 different dinosaurs</string>
+        <string name="around700">Around 700 different dinosaurs</string>
+        <!--answers2-->
+        <string name="hint_your_answer">Write your answer here</string>
+        <!--answers3-->
+        <string name="yes">Yes</string>
+        <string name="no">No</string>
+        <!--answers4-->
+        <string name="bees">Bees</string>
+        <string name="snails">Snails</string>
+        <string name="panda">Panda</string>
+        <string name="lion">Lion</string>
+        <string name="turtles">Turtles</string>
+        <string name="sharks">Sharks</string>
+        <!--answers5-->
+        <string name="trex">T-Rex</string>
+        <string name="apatosaurs">Apatosaurs</string>
+        <string name="gorgosaurus">Gorgosaurus</string>
+        <string name="baryonyx">Baryonyx</string>
+
+        <!--Button texts-->
+        <string name="submit">Submit</string>
+        <string name="restart">Restart</string>
+
+</resources>
