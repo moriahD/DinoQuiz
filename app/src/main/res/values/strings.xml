@@ -50,7 +50,6 @@
         <string name="resultMessage"></string>
 
         <!--Button texts-->
-        <string name="submit">Submit</string>
-        <string name="restart">Restart</string>
+        <string name="submit">Check Result</string>
 
 </resources>

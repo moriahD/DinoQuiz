@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -25,8 +26,15 @@ public class Main2Activity extends AppCompatActivity {
         boolean clickAnswer1 = answer1Button.isChecked();
 
         //Question 2:answer
-        //** I don't know how to write code for this one. answer will be 'Argentinosaurs' I guess I should use if else statement ...but how do i start?
 
+        // get the answer text (the string inside the text field)
+        EditText answerText = (EditText) findViewById(R.id.answer_field);
+        String answer = answerText.getText().toString().trim();
+        // decide if answer is true or false
+        boolean clickAnswer2 = false;
+        if(answer.equals("Argentinosaurus")){
+            clickAnswer2 = true;
+        }
 
         //Question 3:answer
         RadioButton answer3Button = (RadioButton) findViewById(R.id.yes);
@@ -50,7 +58,7 @@ public class Main2Activity extends AppCompatActivity {
         RadioButton answer5Button = (RadioButton) findViewById(R.id.baryonyx);
         boolean clickAnswer5 = answer5Button.isChecked();
 
-        int totalScore = calculateScore(clickAnswer1, clickAnswer3, clickAnswer5, hasAnswers4one, hasAnswers4two, hasAnswers4three, hasAnswers4four);
+        int totalScore = calculateScore(clickAnswer1, clickAnswer2, clickAnswer3, clickAnswer5, hasAnswers4one, hasAnswers4two, hasAnswers4three, hasAnswers4four);
 
         String message = createScoreSummary(score);
         displayResult(message);
@@ -58,7 +66,7 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     //Calculate points for total score
-    private int calculateScore (boolean clickAnswer1, boolean clickAnswer3,boolean hasAnswers4one, boolean hasAnswers4two, boolean hasAnswers4three, boolean hasAnswers4four, boolean clickAnswer5){
+    private int calculateScore (boolean clickAnswer1, boolean clickAnswer2, boolean clickAnswer3,boolean hasAnswers4one, boolean hasAnswers4two, boolean hasAnswers4three, boolean hasAnswers4four, boolean clickAnswer5){
 
         //Add 15 points each when answers for question 1, 2, 3, 5 is clicked
         //question1 answer
@@ -66,7 +74,9 @@ public class Main2Activity extends AppCompatActivity {
             score = score + 15;
         }
         //question2 answer
-
+        if (clickAnswer2){
+            score = score + 15;
+        }
 
         //question3 answer
         if (clickAnswer3){
@@ -78,11 +88,19 @@ public class Main2Activity extends AppCompatActivity {
         }
 
         //Add 10 points each for question 4, when one of 4 answers are clicked
-        //question4 answer1
-        if (hasAnswers4one || hasAnswers4two || hasAnswers4three || hasAnswers4four){
-            score = score + 15;
+        //question4 answers
+        if (hasAnswers4one){
+            score = score + 10;
         }
-
+        if (hasAnswers4two){
+            score = score + 10;
+        }
+        if (hasAnswers4three){
+            score = score + 10;
+        }
+        if (hasAnswers4four){
+            score = score + 10;
+        }
         return score;
 
     }
@@ -108,7 +126,5 @@ public class Main2Activity extends AppCompatActivity {
         TextView textResult = (TextView) findViewById(R.id.resultMsg);
         textResult.setText(message);
     }
-
-
 
 }
