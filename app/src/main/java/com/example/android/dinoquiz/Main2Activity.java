@@ -99,7 +99,7 @@ public class Main2Activity extends AppCompatActivity {
     }
     //Calculate points for total score
     private int calculateScore (boolean clickAnswer1, boolean clickAnswer2, boolean clickAnswer3, boolean clickAnswer5, boolean hasAnswers4one, boolean hasAnswers4two, boolean hasAnswers4three, boolean hasAnswers4four){
-
+        score = 0;
         //Add 15 points each when answers for question 1, 2, 3, 5 is clicked
         //question1 answer
         if (clickAnswer1){
