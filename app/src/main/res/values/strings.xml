@@ -8,48 +8,55 @@
 
     <!--Quiz page-->
 
-        <!--Question 1-->
-        <string name="question1">Question 1: </string>
-        <string name="question1_title">How many different dinosaurs were there?</string>
-        <!--Question 2-->
-        <string name="question2">Question 2: </string>
-        <string name="question2_title">What is biggest dinosaur that\'s named so far?</string>
-        <!--Question 3-->
-        <string name="question3">Question 3: </string>
-        <string name="question3_title">Did dinosaurs have ears?</string>
-        <!--Question 4-->
-        <string name="question4">Question 4: </string>
-        <string name="question4_title">Which of today\'s animals lived with the dinosaurs?</string>
-        <!--Question 5-->
-        <string name="question5">Question 5: </string>
-        <string name="question5_title">Which dinosaurs went fishing?</string>
+    <!--Question 1-->
+    <string name="question1">Question 1: </string>
+    <string name="question1_title">How many different dinosaurs were there?</string>
+    <!--Question 2-->
+    <string name="question2">Question 2: </string>
+    <string name="question2_title">What is biggest dinosaur that\'s named so far?</string>
+    <!--Question 3-->
+    <string name="question3">Question 3: </string>
+    <string name="question3_title">Did dinosaurs have ears?</string>
+    <!--Question 4-->
+    <string name="question4">Question 4: </string>
+    <string name="question4_title">Which of today\'s animals lived with the dinosaurs?</string>
+    <!--Question 5-->
+    <string name="question5">Question 5: </string>
+    <string name="question5_title">Which dinosaurs went fishing?</string>
 
-        <!--answers1-->
-        <string name="around100">Around 100 different dinosaurs</string>
-        <string name="around300">Around 300 different dinosaurs</string>
-        <string name="around700">Around 700 different dinosaurs</string>
-        <!--answers2-->
-        <string name="hint_your_answer">Write your answer here</string>
-        <!--answers3-->
-        <string name="yes">Yes</string>
-        <string name="no">No</string>
-        <!--answers4-->
-        <string name="bees">Bees</string>
-        <string name="snails">Snails</string>
-        <string name="panda">Panda</string>
-        <string name="lion">Lion</string>
-        <string name="turtles">Turtles</string>
-        <string name="sharks">Sharks</string>
-        <!--answers5-->
-        <string name="trex">T-Rex</string>
-        <string name="apatosaurs">Apatosaurs</string>
-        <string name="gorgosaurus">Gorgosaurus</string>
-        <string name="baryonyx">Baryonyx</string>
+    <!--answers1-->
+    <string name="around100">Around 100 different dinosaurs</string>
+    <string name="around300">Around 300 different dinosaurs</string>
+    <string name="around700">Around 700 different dinosaurs</string>
+    <!--answers2-->
+    <string name="hint_your_answer">Write your answer here</string>
+    <!--answers3-->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <!--answers4-->
+    <string name="bees">Bees</string>
+    <string name="snails">Snails</string>
+    <string name="panda">Panda</string>
+    <string name="lion">Lion</string>
+    <string name="turtles">Turtles</string>
+    <string name="sharks">Sharks</string>
+    <!--answers5-->
+    <string name="trex">T-Rex</string>
+    <string name="apatosaurs">Apatosaurs</string>
+    <string name="gorgosaurus">Gorgosaurus</string>
+    <string name="baryonyx">Baryonyx</string>
 
-        <!--result message-->
-        <string name="resultMessage"></string>
+    <!--Show Answers and Explanations under each Question-->
+    <string name="showAnswer1">Hundreds! Around 700 different dinosaurs have been named so far. They are divided into two main groups: Dinosaurs with bird hips and Dinosaurs with lizard hips. New dinosaurs are being discovered all the time.</string>
+    <string name="showAnswer2">Argentinosaurs is as long as 3 buses and as heavy as 14 elephants! Argentinosaurus was thought to be the biggest dinosaur until 2014 when an even bigger dinosaur was discovered. (It has not been named yet.)</string>
+    <string name="showAnswer3">Yes, Scientists do not think they had big sticky-out ones like ours. Their ears were probably just two holes, one each side of their head. But they could definitely hear.</string>
+    <string name="showAnswer4">Bees, dragonflies, snails, platypuses, crocodiles... and a lizard-like reptile called tuatara. Many sea animals were around in dinosaur times too, such as turtles... and sharks.</string>
+    <string name="showAnswer5">Baryonyx, Suchomimus and Spinosaurus. They would hook fish from the water with their thumb claws or snap it up with their long jaws. </string>
 
-        <!--Button texts-->
-        <string name="submit">Check Result</string>
+    <!--result message-->
+    <string name="resultMessage"></string>
+
+    <!--Button texts-->
+    <string name="submit">Check Result</string>
 
 </resources>

@@ -7,6 +7,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/dino_bg"
     android:fillViewport="true">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,221 +18,284 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:textColor="#00C853"
-            android:text="@string/question1" />
+            android:text="@string/question1"
+            android:textColor="#00C853" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="@string/question1_title" />
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/answer1">
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#eee"
-                android:buttonTint="#eee"
-                android:id="@+id/around100"
-                android:text="@string/around100"/>
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#eee"
-                android:buttonTint="#eee"
-                android:id="@+id/around300"
-                android:text="@string/around300"/>
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#eee"
-                android:buttonTint="#eee"
-                android:id="@+id/around700"
-                android:text="@string/around700"/>
 
+        <RadioGroup
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/around100"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="#eee"
+                android:text="@string/around100"
+                android:textColor="#eee" />
+
+            <RadioButton
+                android:id="@+id/around300"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="#eee"
+                android:text="@string/around300"
+                android:textColor="#eee" />
+
+            <RadioButton
+                android:id="@+id/around700"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="#eee"
+                android:text="@string/around700"
+                android:textColor="#eee" />
 
         </RadioGroup>
 
+        <!--Explanation & Answer for Q1-->
+        <TextView
+            android:id="@+id/showAnswer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showAnswer1"
+            android:visibility="invisible"
+            android:textColor="#00C853" />
 
         <!--Question2-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:textColor="#00C853"
-            android:text="@string/question2" />
+            android:text="@string/question2"
+            android:textColor="#00C853" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question2_title" />
+
         <EditText
             android:id="@+id/answer_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_your_answer"
+            android:inputType="textCapWords"
             android:textColor="#eee"
-            android:textColorHint="#808080"
-            android:inputType="textCapWords" />
-
+            android:textColorHint="#808080" />
+        <!--Explanation & Answer for Q2-->
+        <TextView
+            android:id="@+id/showAnswer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showAnswer2"
+            android:visibility="invisible"
+            android:textColor="#00C853" />
         <!--Question3-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:textColor="#00C853"
-            android:text="@string/question3" />
+            android:text="@string/question3"
+            android:textColor="#00C853" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question3_title" />
+
         <RadioGroup
+            android:id="@+id/answer3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/answer3"
             android:orientation="horizontal">
+
             <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#eee"
-                android:buttonTint="#eee"
-                android:layout_marginRight="16dp"
                 android:id="@+id/yes"
-                android:text="@string/yes"/>
-            <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="#eee"
+                android:layout_marginRight="16dp"
                 android:buttonTint="#eee"
+                android:text="@string/yes"
+                android:textColor="#eee" />
+
+            <RadioButton
                 android:id="@+id/no"
-                android:text="@string/no"/>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="#eee"
+                android:text="@string/no"
+                android:textColor="#eee" />
 
 
         </RadioGroup>
-
+        <!--Explanation & Answer for Q3-->
+        <TextView
+            android:id="@+id/showAnswer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showAnswer3"
+            android:visibility="invisible"
+            android:textColor="#00C853" />
 
         <!--Question4-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:textColor="#00C853"
-            android:text="@string/question4" />
+            android:text="@string/question4"
+            android:textColor="#00C853" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question4_title" />
+
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/bees"
-            android:buttonTint="#eee"
             android:id="@+id/answer4_1"
-            android:textColor="#eee" />
-        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/snails"
             android:buttonTint="#eee"
+            android:text="@string/bees"
+            android:textColor="#eee" />
+
+        <CheckBox
             android:id="@+id/answer4_2"
-            android:textColor="#eee" />
-        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="#eee"
+            android:text="@string/snails"
+            android:textColor="#eee" />
+
+        <CheckBox
+            android:id="@+id/answer4_panda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#eee"
             android:text="@string/panda"
-            android:buttonTint="#eee"
-            android:textColor="#eee"/>
+            android:textColor="#eee" />
+
         <CheckBox
+            android:id="@+id/answer4_lion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="#eee"
             android:text="@string/lion"
-            android:buttonTint="#eee"
             android:textColor="#eee" />
+
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/answer4_3"
-            android:text="@string/turtles"
-            android:buttonTint="#eee"
-            android:textColor="#eee" />
-        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/answer4_4"
-            android:text="@string/sharks"
             android:buttonTint="#eee"
+            android:text="@string/turtles"
             android:textColor="#eee" />
+
+        <CheckBox
+            android:id="@+id/answer4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#eee"
+            android:text="@string/sharks"
+            android:textColor="#eee" />
+        <!--Explanation & Answer for Q4-->
+        <TextView
+            android:id="@+id/showAnswer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showAnswer4"
+            android:visibility="invisible"
+            android:textColor="#00C853" />
 
         <!--Question5-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:textColor="#00C853"
-            android:text="@string/question5" />
+            android:text="@string/question5"
+            android:textColor="#00C853" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question5_title" />
+
         <RadioGroup
+            android:id="@+id/answer5"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/answer5">
+            android:layout_height="wrap_content">
+
             <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#eee"
-                android:buttonTint="#eee"
                 android:id="@+id/trex"
-                android:text="@string/trex"/>
-            <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="#eee"
                 android:buttonTint="#eee"
+                android:text="@string/trex"
+                android:textColor="#eee" />
+
+            <RadioButton
                 android:id="@+id/apatosaurs"
-                android:text="@string/apatosaurs"/>
-            <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="#eee"
                 android:buttonTint="#eee"
+                android:text="@string/apatosaurs"
+                android:textColor="#eee" />
+
+            <RadioButton
                 android:id="@+id/gorgosaurus"
-                android:text="@string/gorgosaurus"/>
-            <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="#eee"
                 android:buttonTint="#eee"
+                android:text="@string/gorgosaurus"
+                android:textColor="#eee" />
+
+            <RadioButton
                 android:id="@+id/baryonyx"
-                android:text="@string/baryonyx"/>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="#eee"
+                android:text="@string/baryonyx"
+                android:textColor="#eee" />
 
 
         </RadioGroup>
 
+        <!--Explanation & Answer for Q5-->
         <TextView
+            android:id="@+id/showAnswer5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/showAnswer5"
+            android:visibility="invisible"
+            android:textColor="#00C853" />
+
+        <!--Show result Text-->
+        <TextView
             android:id="@+id/resultMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/resultMessage" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:orientation="horizontal"
             android:gravity="center"
+            android:orientation="horizontal"
             android:paddingTop="16dp">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#00C853"
                 android:onClick="submit"
                 android:text="@string/submit"
-                android:backgroundTint="#00C853"
-                android:textAllCaps="true"
-                android:layout_margin="10dp"/>
-
-
+                android:textAllCaps="true" />
 
 
         </LinearLayout>

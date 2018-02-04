@@ -1,5 +1,6 @@
 package com.example.android.dinoquiz;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -60,11 +61,42 @@ public class Main2Activity extends AppCompatActivity {
 
         int totalScore = calculateScore(clickAnswer1, clickAnswer2, clickAnswer3, clickAnswer5, hasAnswers4one, hasAnswers4two, hasAnswers4three, hasAnswers4four);
 
+        updateAnswerColors(clickAnswer1, clickAnswer2, clickAnswer3, clickAnswer5, hasAnswers4one, hasAnswers4two, hasAnswers4three, hasAnswers4four);
         String message = createScoreSummary(score);
         displayResult(message);
+        showAnswers();
+
+
 
     }
+    private void updateAnswerColors (boolean clickAnswer1, boolean clickAnswer2, boolean clickAnswer3, boolean clickAnswer5, boolean hasAnswers4one, boolean hasAnswers4two, boolean hasAnswers4three, boolean hasAnswers4four) {
+        if (clickAnswer1){
+            setFieldColor(Color.GREEN, R.id.showAnswer1);
+        } else {
+            setFieldColor(Color.RED, R.id.showAnswer1);
+        }
+        if (clickAnswer2){
+            setFieldColor(Color.GREEN, R.id.showAnswer2);
+        } else {
+            setFieldColor(Color.RED, R.id.showAnswer2);
+        }
+        if (clickAnswer3){
+            setFieldColor(Color.GREEN, R.id.showAnswer3);
+        } else {
+            setFieldColor(Color.RED, R.id.showAnswer3);
+        }
+        if (hasAnswers4one && hasAnswers4two && hasAnswers4three && hasAnswers4four){
+            setFieldColor(Color.GREEN, R.id.showAnswer4);
+        } else {
+            setFieldColor(Color.RED, R.id.showAnswer4);
+        }
+        if (clickAnswer5){
+            setFieldColor(Color.GREEN, R.id.showAnswer5);
+        } else {
+            setFieldColor(Color.RED, R.id.showAnswer5);
+        }
 
+    }
     //Calculate points for total score
     private int calculateScore (boolean clickAnswer1, boolean clickAnswer2, boolean clickAnswer3,boolean hasAnswers4one, boolean hasAnswers4two, boolean hasAnswers4three, boolean hasAnswers4four, boolean clickAnswer5){
 
@@ -119,12 +151,30 @@ public class Main2Activity extends AppCompatActivity {
 
     }
 
-    /**
-     * This method displays the given quantity value on the screen. how?
-     */
     private void displayResult(String message){
         TextView textResult = (TextView) findViewById(R.id.resultMsg);
         textResult.setText(message);
+    }
+
+
+    /**
+     * This method changes visibility of textfields
+     */
+    private void setFieldVisibility(int visibility, int idField){
+        TextView textField = (TextView) findViewById(idField);
+        textField.setVisibility(visibility);
+    }
+    private void setFieldColor(int color, int idField){
+        TextView textField = (TextView) findViewById(idField);
+        textField.setTextColor(color);
+    }
+
+    private void showAnswers(){
+        setFieldVisibility(View.VISIBLE, R.id.showAnswer1);
+        setFieldVisibility(View.VISIBLE, R.id.showAnswer2);
+        setFieldVisibility(View.VISIBLE, R.id.showAnswer3);
+        setFieldVisibility(View.VISIBLE, R.id.showAnswer4);
+        setFieldVisibility(View.VISIBLE, R.id.showAnswer5);
     }
 
 }
