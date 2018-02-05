@@ -47,10 +47,10 @@
     <string name="baryonyx">Baryonyx</string>
 
     <!--Show Answers and Explanations under each Question-->
-    <string name="showAnswer1">Hundreds! Around 700 different dinosaurs have been named so far. They are divided into two main groups: Dinosaurs with bird hips and Dinosaurs with lizard hips. New dinosaurs are being discovered all the time.</string>
-    <string name="showAnswer2">Argentinosaurs is as long as 3 buses and as heavy as 14 elephants! Argentinosaurus was thought to be the biggest dinosaur until 2014 when an even bigger dinosaur was discovered. (It has not been named yet.)</string>
+    <string name="showAnswer1">Hundreds! Around 700 different dinosaurs have been named so far. New dinosaurs are being discovered all the time.</string>
+    <string name="showAnswer2">Argentinosaurs is as long as 3 buses and as heavy as 14 elephants! </string>
     <string name="showAnswer3">Yes, Scientists do not think they had big sticky-out ones like ours. Their ears were probably just two holes, one each side of their head. But they could definitely hear.</string>
-    <string name="showAnswer4">Bees, dragonflies, snails, platypuses, crocodiles... and a lizard-like reptile called tuatara. Many sea animals were around in dinosaur times too, such as turtles... and sharks.</string>
+    <string name="showAnswer4">Bees, dragonflies, snails, platypuses, crocodiles and a lizard-like reptile called tuatara. Many sea animals were around in dinosaur times too, such as turtles and sharks.</string>
     <string name="showAnswer5">Baryonyx, Suchomimus and Spinosaurus. They would hook fish from the water with their thumb claws or snap it up with their long jaws. </string>
 
     <!--result message-->
